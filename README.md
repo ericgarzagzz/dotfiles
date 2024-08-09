@@ -18,9 +18,18 @@ $ git clone git@github.com:ericgarzagzz/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 ```
 
-Then, use GNU stow to create symlinks for you.
+After that, build the script source files under .local/bin/dwmscripts
 
 ```
+$ cd ~/.dotfiles/.local/bin/dwmscripts
+$ chmod +x build.sh
+$ ./build.sh
+```
+
+Finally, navigate back to repository root directory and use GNU stow to create symlinks for you.
+
+```
+$ cd ~/.dotfiles
 $ stow .
 ```
 
