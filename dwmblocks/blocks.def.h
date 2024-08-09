@@ -3,6 +3,7 @@ static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
 	{"Vol: ", "pamixer --get-volume | awk '{print $0 \"%\"}'",	30,		0},
 	{"Mem: ", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",	30,		0},
+	{"CPU: ", "~/.local/bin/dwmscripts/cpu",			30,		0},
 	{"", "date '+%F %H:%M'",					5,		0},
 };
 
