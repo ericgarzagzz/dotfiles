@@ -140,7 +140,7 @@ export PATH="$PATH:/home/egarza/.dotnet/tools"
 
 source ~/.cache/wal/colors-tty.sh
 
-wal -R > /dev/null
+# wal -R > /dev/null
 
 fastfetch
 
