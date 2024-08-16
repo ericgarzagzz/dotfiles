@@ -8,6 +8,8 @@ The following software should be already installed on the system:
 
 - Git
 - Stow
+- Meson
+- Ninja
 
 ## Installation
 
@@ -22,8 +24,9 @@ After that, build the script source files under .local/bin/dwmscripts
 
 ```
 $ cd ~/.dotfiles/.local/bin/dwmscripts
-$ chmod +x build.sh
-$ ./build.sh
+$ meson setup build
+$ cd build
+$ ninja
 ```
 
 Finally, navigate back to repository root directory and use GNU stow to create symlinks for you.

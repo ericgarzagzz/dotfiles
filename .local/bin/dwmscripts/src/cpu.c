@@ -2,8 +2,9 @@
 #include<string.h>
 #include<unistd.h>
 #include<stdio.h>
+#include "cpu.h"
 
-int main(int argc, char **argv)
+void cpu_print_usage()
 {
 	char str[100];
 	const char d[2] = " ";
@@ -43,6 +44,4 @@ int main(int argc, char **argv)
 		times--;
 		sleep(lag);
 	}
-
-	return 0;
 }
