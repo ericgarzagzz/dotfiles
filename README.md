@@ -54,6 +54,14 @@ $ rm ~/.dotfiles/dwmblocks/blocks.h
 $ sudo make install
 ```
 
+For tmux plugin manager (tpm), execute the following commands:
+
+```
+$ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
+Install plugins using [the following](https://github.com/tmux-plugins/tpm?tab=readme-ov-file#installing-plugins) instructions.
+
 After that, build the script source files under .local/bin/dwmscripts
 
 ```
