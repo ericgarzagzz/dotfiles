@@ -20,6 +20,22 @@ $ git clone git@github.com:ericgarzagzz/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 ```
 
+Then, in order to build dwm, execute the following commands: 
+
+```
+$ cd ~/.dotfiles/dwm
+$ rm config.h
+$ sudo make install
+```
+
+For the dwm status bar to show stats, build dwmblocks by executing:
+
+```
+$ cd ~/.dotfiles/dwmblocks
+$ rm ~/.dotfiles/dwmblocks/blocks.h
+$ sudo make install
+```
+
 After that, build the script source files under .local/bin/dwmscripts
 
 ```
