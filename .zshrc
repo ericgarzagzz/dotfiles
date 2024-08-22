@@ -132,18 +132,6 @@ unset key
 
 export PATH="$PATH:/home/egarza/.dotnet/tools"
 
-# Import colorscheme from 'wal' asynchronously
-# &   # Run the process in the background.
-# ( ) # Hide shell job control messages.
-# Not supported in the "fish" shell.
-(cat ~/.cache/wal/sequences &)
-
-source ~/.cache/wal/colors-tty.sh
-
-# wal -R > /dev/null
-
-fastfetch
-
 # bun completions
 [ -s "/home/egarza/.bun/_bun" ] && source "/home/egarza/.bun/_bun"
 
