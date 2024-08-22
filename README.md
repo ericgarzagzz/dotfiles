@@ -2,14 +2,32 @@
 
 Dotfiles to setup linux environment.
 
-## Requirements
+## Dependencies
 
-The following software should be already installed on the system:
+To install dependencies, use the following command depending on the package manager and distribution:
 
-- Git
-- Stow
-- Meson
-- Ninja
+### DNF (Fedora)
+```
+$ sudo dnf -y install git stow meson ninja-build zsh feh kitty neovim picom tmux
+```
+
+### Pacman (Arch) 
+```
+$ sudo pacman -S --noconfirm git stow meson ninja zsh feh kitty neovim picom tmux
+```
+
+### APT (Debian)
+```
+$ sudo apt -y install git stow meson ninja-build zsh feh kitty neovim picom tmux
+```
+
+## Zsh as default shell
+
+Set Zsh as the default shell:
+
+```
+$ chsh -s $(which zsh)
+```
 
 ## Installation
 
