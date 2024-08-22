@@ -29,8 +29,8 @@ zmodule duration-info
 zmodule git-info
 # Prompt pwd
 zmodule prompt-pwd
-# A heavily reduced, ASCII-only version of the Spaceship and Starship prompts.
-zmodule minimal
+
+zmodule bira
 
 #
 # Completion
