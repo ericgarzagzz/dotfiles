@@ -36,8 +36,8 @@ Install a nerd font, in the case of the current settings, SauceCodePro is used.
 ```
 $ wget -P ~/.local/share/fonts https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/SourceCodePro.zip
 $ cd ~/.local/share/fonts
-$ unzip SourcecCodePro.zip
-$ rm SourcecCodePro.zip
+$ unzip SourceCodePro.zip
+$ rm SourceCodePro.zip
 $ fc-cache -fv
 ```
 
