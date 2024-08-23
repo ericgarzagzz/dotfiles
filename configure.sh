@@ -60,6 +60,7 @@ function copy_xsessions() {
 
 function create_symlinks() {
 	cd ~/.dotfiles || exit 1
+	stow --adopt .
 }
 
 function install_tpm() {
