@@ -8,17 +8,17 @@ To install dependencies, use the following command depending on the package mana
 
 ### DNF (Fedora)
 ```
-$ sudo dnf -y install git stow meson ninja-build zsh feh kitty neovim picom tmux libX11-devel libXft-devel libXinerama-devel fzf wget unzip
+$ sudo dnf -y install git stow meson ninja-build zsh feh kitty neovim tmux libX11-devel libXft-devel libXinerama-devel fzf wget unzip
 ```
 
 ### Pacman (Arch) 
 ```
-$ sudo pacman -S --noconfirm git stow meson ninja zsh feh kitty neovim picom tmux libx11 libxft libxinerama fzf wget unzip
+$ sudo pacman -S --noconfirm git stow meson ninja zsh feh kitty neovim tmux libx11 libxft libxinerama fzf wget unzip
 ```
 
 ### APT (Debian)
 ```
-$ sudo apt -y install git stow meson ninja-build zsh feh kitty neovim picom tmux libx11-dev libxft-dev libxinerama-dev fzf wget unzip
+$ sudo apt -y install git stow meson ninja-build zsh feh kitty neovim tmux libx11-dev libxft-dev libxinerama-dev fzf wget unzip
 ```
 
 ## Zsh as default shell
