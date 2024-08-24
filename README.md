@@ -2,23 +2,27 @@
 
 Dotfiles to setup linux environment.
 
+## Automatic installation
+
+To automate the installation, copy the `configure.sh` file and run it. The script might ask for password more than once.
+
 ## Dependencies
 
 To install dependencies, use the following command depending on the package manager and distribution:
 
 ### DNF (Fedora)
 ```
-$ sudo dnf -y install git stow meson ninja-build zsh feh kitty neovim tmux libX11-devel libXft-devel libXinerama-devel fzf wget unzip
+$ sudo dnf -y install git stow meson ninja-build zsh feh kitty rofi neovim tmux libX11-devel libXft-devel libXinerama-devel fzf wget unzip
 ```
 
 ### Pacman (Arch) 
 ```
-$ sudo pacman -S --noconfirm git stow meson ninja zsh feh kitty neovim tmux libx11 libxft libxinerama fzf wget unzip
+$ sudo pacman -S --noconfirm git stow meson ninja zsh feh kitty rofi neovim tmux libx11 libxft libxinerama fzf wget unzip
 ```
 
 ### APT (Debian)
 ```
-$ sudo apt -y install git stow meson ninja-build zsh feh kitty neovim tmux libx11-dev libxft-dev libxinerama-dev fzf wget unzip
+$ sudo apt -y install git stow meson ninja-build zsh feh kitty rofi neovim tmux libx11-dev libxft-dev libxinerama-dev fzf wget unzip
 ```
 
 ## Zsh as default shell
