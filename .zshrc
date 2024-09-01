@@ -159,6 +159,9 @@ export PATH="$HOME/.local/bin:$PATH"
 # Dotnet globalization invariant flag
 export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
 
+# ARM Dev
+export PATH="$HOME/arm-linux-gnueabi/bin:$PATH"
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
