@@ -6,11 +6,11 @@ function install_dependencies() {
 	PACMAN_CMD=$(which pacman)
 	# Install dependencies
 	if [[ -n $DNF_CMD ]]; then
-		sudo dnf -y install git stow meson ninja-build zsh feh kitty neovim picom tmux libX11-devel libXft-devel libXinerama-devel fzf wget unzip
+		sudo dnf -y install git stow meson ninja-build zsh feh kitty neovim rofi tmux libX11-devel libXft-devel libXinerama-devel fzf wget unzip
 	elif [[ -n $APT_CMD ]]; then
-		sudo apt -y install git stow meson ninja-build zsh feh kitty neovim picom tmux libx11-dev libxft-dev libxinerama-dev fzf wget unzip
+		sudo apt -y install git stow meson ninja-build zsh feh kitty neovim rofi tmux libx11-dev libxft-dev libxinerama-dev fzf wget unzip
 	elif [[ -n $PACMAN_CMD ]]; then
-		sudo pacman -S --noconfirm git stow meson ninja zsh feh kitty neovim picom tmux libx11 libxft libxinerama fzf wget unzip
+		sudo pacman -S --noconfirm git stow meson ninja zsh feh kitty neovim rofi tmux libx11 libxft libxinerama fzf wget unzip
 	else
 		echo "Error: No supported package manager found."
 		exit 1;
