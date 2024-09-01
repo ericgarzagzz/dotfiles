@@ -54,6 +54,10 @@ function build_scripts() {
 	ninja
 }
 
+function export_public_run_dwm() {
+	sudo mv ~/.dotfiles/.local/bin/run_dwm.sh /usr/local/bin
+}
+
 function copy_xsessions() {
 	sudo cp ~/.dotfiles/dwm.desktop /usr/share/xsessions/
 }
@@ -74,6 +78,7 @@ clone_dotfiles_repo
 install_dwm
 install_dwmblocks
 build_scripts
+export_public_run_dwm
 copy_xsessions
 create_symlinks
 install_tpm
